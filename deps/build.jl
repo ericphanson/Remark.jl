@@ -12,7 +12,7 @@ download(
 const tmp = joinpath(_pkg_assets, "tmp")
 !isdir(tmp) && mkdir(tmp)
 
-download("https://github.com/KaTeX/KaTeX/releases/download/v0.10.0/katex.tar.gz", joinpath(tmp, "katex.tar.gz"))
+download("https://github.com/KaTeX/KaTeX/releases/download/v0.12.0/katex.tar.gz", joinpath(tmp, "katex.tar.gz"))
 
 BinaryProvider.gen_unpack_cmd(joinpath(tmp, "katex.tar.gz"), tmp) |> run
 
